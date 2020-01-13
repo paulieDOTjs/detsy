@@ -10,7 +10,7 @@ module.exports = function(sequelize, DataTypes) {
       type: DataTypes.STRING,
       allowNull: false,
       validate: {
-        len: [5]
+        len: ([3, 32])
       }
     },
     email: {
@@ -19,14 +19,13 @@ module.exports = function(sequelize, DataTypes) {
       unique: true,
       validate: {
         isEmail: true,
-        len: [6, 128]
       }
     },
     password: {
       type: DataTypes.STRING,
       allowNull: false,
       validate: {
-        len: [5, 100]
+        len: [5, 45]
       }
     },
     shopName: {

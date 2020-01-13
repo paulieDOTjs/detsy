@@ -3,6 +3,7 @@ var passport = require("../config/passport");
 
 var bCrypt = require("bcrypt-nodejs");
 var db = require("../models");
+var path = require("path");
 
 module.exports = function(app) {
   // Using the passport.authenticate middleware with our local strategy.
@@ -12,7 +13,7 @@ module.exports = function(app) {
     // Since we're doing a POST with javascript, we can't actually redirect that post into a GET request
     // So we're sending the user back the route to the members page because the redirect will happen on the front end
     // They won't get this or even be able to access this page if they aren't authed
-    res.json("/user-page");
+    res.sendFile(path.join(__dirname, "../public/html/user-page.html"))
   });
   // Route for signing up a user. The user's password is automatically hashed and stored securely thanks to
   // how we configured our Sequelize User Model. If the user is created successfully, proceed to log the user in,

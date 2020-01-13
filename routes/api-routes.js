@@ -23,7 +23,7 @@ module.exports = function(app) {
   ***************************/
 
   app.get("/api/users/all", function(req, res) {
-    db.Product.findAll().then(function(dbUsers) {
+    db.User.findAll().then(function(dbUsers) {
       res.json(dbUsers);
     });
   });
