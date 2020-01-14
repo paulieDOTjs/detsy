@@ -22,7 +22,7 @@ function renderCards() {
       <div class="card-body">
           <h5 class="shop-name card-title">${realData[i].shopName}</h5>
           <p id="shop-description" class="card-text">${realData[i].shopDescription}</p>
-          <a href="/user-page" class="btn visit-shop">Visit Shop</a>
+          <a href="/user-page/${realData[i].id}" class="btn visit-shop">Visit Shop</a>
       </div>`;
   }
 }
