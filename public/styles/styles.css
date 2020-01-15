@@ -167,3 +167,11 @@ p {
   text-align: center;
   margin-top: 15px;
 }
+
+.fake-form {
+  background-color: white;
+  width: 100%;
+  color: #666666;
+  border: 1px solid #ced4da;
+  height: calc(1.5em + .75rem + 2px);
+}
