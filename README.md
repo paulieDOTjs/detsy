@@ -1,6 +1,6 @@
 # Detsy
 
-Live site found here: https://detsy.herokuapp.com/
+Live site found here: https://detsy2.herokuapp.com/
 
 # Description
 
@@ -8,7 +8,7 @@ This is a marketplace app. Using this app users can create a profile, list items
 
 # Live App
 
-https://detsy.herokuapp.com/
+https://detsy2.herokuapp.com/
 
 # Images
 ![home page](https://github.com/TheMaryJacobs/Project2/blob/nav-fix/public/readme%20images/Screen%20Shot%202020-01-09%20at%2010.01.11%20PM.png?raw=true)
